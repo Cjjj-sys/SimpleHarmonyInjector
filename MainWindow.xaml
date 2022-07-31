@@ -1,0 +1,60 @@
+﻿<Window
+    x:Class="SimpleHarmonyInjector.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SimpleHarmonyInjector"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="MainWindow"
+    Width="480"
+    Height="480"
+    mc:Ignorable="d"
+    Loaded="Window_Loaded">
+    <Grid Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*" />
+            <RowDefinition Height="75*" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Button x:Name="buttonInject" Margin="2" Click="buttonInject_Click" >
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="注入 "/>
+                        <TextBlock Text="{Binding ElementName=listBoxProcess, Path=SelectedItem.ProcessName}"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <TextBlock
+                x:Name="textBlockStatus"
+                Grid.Row="1"
+                Margin="2"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Text="未注入" />
+        </Grid>
+        <Grid Grid.Row="1">
+            <ListBox x:Name="listBoxProcess">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Id}"/>
+                            <TextBlock Text=": "/>
+                            <TextBlock Text="{Binding ProcessName}"/>
+                            <TextBlock Text=" ["/>
+                            <TextBlock Text="{Binding MainWindowTitle}"/>
+                            <TextBlock Text="]"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Button x:Name="buttonRefresh" Content="刷新进程列表" Click="buttonRefresh_Click" />
+        </Grid>
+    </Grid>
+</Window>
