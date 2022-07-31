@@ -8,8 +8,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleHarmonyInjector", "Si
 		{123D900C-B215-41AD-9C96-E7C8AC561E15} = {123D900C-B215-41AD-9C96-E7C8AC561E15}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SimpleInjectorLib", "..\SimpleInjectorLib\SimpleInjectorLib.csproj", "{3B6045AF-F58A-4354-84A2-AA7F16349BAE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StonePlannerPatch", "..\StonePlannerPatch\StonePlannerPatch.csproj", "{123D900C-B215-41AD-9C96-E7C8AC561E15}"
 EndProject
 Global
@@ -22,10 +20,6 @@ Global
 		{90F8F162-8F8D-4191-99A7-94A5914526EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90F8F162-8F8D-4191-99A7-94A5914526EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90F8F162-8F8D-4191-99A7-94A5914526EA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3B6045AF-F58A-4354-84A2-AA7F16349BAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3B6045AF-F58A-4354-84A2-AA7F16349BAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3B6045AF-F58A-4354-84A2-AA7F16349BAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3B6045AF-F58A-4354-84A2-AA7F16349BAE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{123D900C-B215-41AD-9C96-E7C8AC561E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{123D900C-B215-41AD-9C96-E7C8AC561E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{123D900C-B215-41AD-9C96-E7C8AC561E15}.Release|Any CPU.ActiveCfg = Release|Any CPU

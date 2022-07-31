@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SimpleInjectorLib\SimpleInjectorLib.csproj" />
+    <PackageReference Include="FastWin32" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
